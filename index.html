@@ -5,17 +5,40 @@
     <title>
         Missing numbers
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
 </head>
 
 <body>
-    <form id="my_form">
-        <label for="myfile1">Select 1st file:</label>
-        <input type="file" id="myfile1" name="myfile" required>
-        <label for="myfile2">Select 2nd file:</label>
-        <input type="file" id="myfile2" name="myfile" required>
-        <input type="submit" id="submit-btn" value="Submit">
-    </form>
-    <output id="list"></output>
+    <div class="ui stackable grid container">
+        <div class="one wide column"></div>
+        <div class="seven wide column">
+            <h3 class="ui top attached center aligned inverted header">
+                Missing items from 2nd file on comparing with 1st
+            </h3>
+            <div class="ui attached segment container">
+                <form class="ui form" id="my_form">
+                    <div class="field">
+                        <label for="myfile1">Select 1st file:</label>
+                        <input type="file" id="myfile1" name="myfile1" required>
+                    </div>
+                    <div class="field">
+                        <label for="myfile2">Select 2nd file:</label>
+                        <input type="file" id="myfile2" name="myfile2" required>
+                    </div>
+                    <div class="field">
+                        <input class="ui button" type="submit" id="submit-btn" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <a class="ui fluid github icon black button"
+                href="https://github.com/Aakash-Kumar-Goryan/MissingValuesInTwoFiles">
+                <i class="github icon"></i> Github
+            </a>
+        </div>
+        <div class="six wide column" id="container"></div>
+        <div class="two wide column"></div>
+    </div>
 </body>
 <script src="script.js"></script>
 
