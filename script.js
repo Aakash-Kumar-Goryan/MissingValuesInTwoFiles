@@ -48,7 +48,7 @@ document.getElementById("my_form").addEventListener("submit", function (event) {
                             <th><i class="attention icon"></i>${difference2.size} missing numbers</th>
                         </tr>
                     </tfoot></table>`;
-        document.getElementById('container').innerHTML += ` <div class="ui fluid buttons">
+        document.getElementById('container').innerHTML = ` <div class="ui fluid buttons">
                                                                 <a class="ui blue attached button" id="myButton1" href="#">
                                                                     <i class="download icon"></i> Save as text file
                                                                 </a>
